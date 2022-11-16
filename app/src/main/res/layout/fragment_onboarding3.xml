@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding3Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageob3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onboard3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageob3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Nikmati pengalaman membaca yang berbeda"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="16sp"/>
+        
+        <Button
+            android:id="@+id/btnMulai"
+            android:layout_width="297dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp"
+            android:backgroundTint="#FFD050"
+            android:text="Mulai"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:elevation="5dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
