@@ -100,7 +100,6 @@
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="88dp"
-            android:backgroundTint="#FFD050"
             android:elevation="6dp"
             android:fontFamily="@font/poppinsbold"
             android:text="Masuk"
@@ -167,6 +166,7 @@
             android:fontFamily="@font/poppinsregular"
             android:text="Daftar disini"
             android:textColor="#0885AF"
+            android:focusable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvBelumPunyaAkun"
             app:layout_constraintTop_toBottomOf="@+id/innerLinearLayout" />
