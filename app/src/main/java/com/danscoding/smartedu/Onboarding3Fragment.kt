@@ -26,6 +26,7 @@ class Onboarding3Fragment : Fragment() {
         btnMulai.setOnClickListener {
             val intent = Intent(requireActivity(), LoginActivity::class.java)
             startActivity(intent)
+            onStop()
         }
     }
 }

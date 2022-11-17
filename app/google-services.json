@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "872987967521",
+    "project_id": "smart-edu-d0658",
+    "storage_bucket": "smart-edu-d0658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872987967521:android:abd0146945d0fd9a0ca360",
+        "android_client_info": {
+          "package_name": "com.danscoding.smartedu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872987967521-kc245o25nrrqtop18ed1qktehkg7cu0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.danscoding.smartedu",
+            "certificate_hash": "8627e74215689d3d721d9e14f1d9bc378dea79e0"
+          }
+        },
+        {
+          "client_id": "872987967521-irh8tj4rdj0ovf9mtb2m7tneaa5tb0md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeqcOeDCfykk9DMQRKh1l-DXhowi0sdqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872987967521-irh8tj4rdj0ovf9mtb2m7tneaa5tb0md.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
