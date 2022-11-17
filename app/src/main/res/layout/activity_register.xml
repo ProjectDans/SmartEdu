@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo2"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_below="@+id/logo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinsmedium"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinsmedium"
+            android:drawableEnd="@drawable/ic_eye"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:id="@+id/ulangpasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:hint="Ulangi Password"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinsmedium"
+            android:drawableEnd="@drawable/ic_eye"
+            android:elevation="6dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="#FFD050"
+        android:elevation="6dp"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsbold"/>
+
+
+</RelativeLayout>

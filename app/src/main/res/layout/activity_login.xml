@@ -23,7 +23,7 @@
         android:layout_height="45dp"
         android:layout_below="@id/tvsignin"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/logo2"/>
 
     <LinearLayout
@@ -156,6 +156,7 @@
             app:layout_constraintTop_toBottomOf="@+id/innerLinearLayout" />
 
         <TextView
+            android:id="@+id/tvdaftardisini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/constraintLayout"
