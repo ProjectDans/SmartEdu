@@ -4,81 +4,160 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".OtpActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/frameLayoutRoot">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        
-        <EditText
-            android:enabled="false"
-            android:cursorVisible="true"
-            android:imeOptions="actionNone"
-            android:maxLength="1"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:gravity="center"
-            android:background="@drawable/otp_bg_item"
-            android:id="@+id/editTextOne"
-            android:fontFamily="@font/poppinsbold"
-            android:textSize="16sp"
-            android:textCursorDrawable="@null"
-            android:layout_marginEnd="10dp"
-            android:layout_width="40dp"
-            android:layout_height="60dp"/>
-        <EditText
-            android:enabled="false"
-            android:cursorVisible="true"
-            android:imeOptions="actionNone"
-            android:maxLength="1"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:gravity="center"
-            android:background="@drawable/otp_bg_item"
-            android:id="@+id/editTextTwo"
-            android:fontFamily="@font/poppinsbold"
-            android:textSize="16sp"
-            android:textCursorDrawable="@null"
-            android:layout_marginEnd="10dp"
-            android:layout_width="40dp"
-            android:layout_height="60dp"/>
-        <EditText
-            android:enabled="false"
-            android:cursorVisible="true"
-            android:imeOptions="actionNone"
-            android:maxLength="1"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:gravity="center"
-            android:background="@drawable/otp_bg_item"
-            android:id="@+id/editTextThree"
-            android:fontFamily="@font/poppinsbold"
-            android:textSize="16sp"
-            android:textCursorDrawable="@null"
-            android:layout_marginEnd="10dp"
-            android:layout_width="40dp"
-            android:layout_height="60dp"/>
-        <EditText
-            android:enabled="false"
-            android:cursorVisible="true"
-            android:imeOptions="actionNone"
-            android:maxLength="1"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:gravity="center"
-            android:background="@drawable/otp_bg_item"
-            android:id="@+id/editTextFour"
-            android:fontFamily="@font/poppinsbold"
-            android:textSize="16sp"
-            android:textCursorDrawable="@null"
-            android:layout_marginEnd="10dp"
-            android:layout_width="40dp"
-            android:layout_height="60dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="OTP Verifikasi"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsextrabold"
+            android:layout_marginTop="100sp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp" />
+
+        <TextView
+            android:id="@+id/tvMasukkanKode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="160sp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginBottom="30sp"
+            android:text="Masukan kode Verifikasi yang telah dikirimkan ke email anda."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="380sp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginBottom="30sp"
+            android:text="1:59 Detik"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <TextView
+            android:id="@+id/tvBelumTerima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="410sp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginBottom="30sp"
+            android:text="Belum terima kode?  Kirim Ulang"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsmedium"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvBelumTerima"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Verifikasi"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/black"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tvMasukkanKode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:id="@+id/editTextOne"
+                android:textStyle="bold"
+                android:textSize="15pt"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="60dp"/>
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:id="@+id/editTextTwo"
+                android:textStyle="bold"
+                android:textSize="15pt"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="60dp"/>
+
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:id="@+id/editTextThree"
+                android:textStyle="bold"
+                android:textSize="15pt"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="60dp"/>
+
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:imeOptions="actionNone"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:id="@+id/editTextFour"
+                android:textStyle="bold"
+                android:textSize="15pt"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </FrameLayout>
