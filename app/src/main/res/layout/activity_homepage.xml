@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomepageActivity">
 
-    <TextView
-        android:id="@+id/displayName"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--        <androidx.viewpager2.widget.ViewPager2-->
+        <!--            android:id="@+id/view_pager"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="260dp"-->
+        <!--            android:layout_margin="16dp"/>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_below="@+id/view_pager"-->
+        <!--            android:id="@+id/dots_indicator"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center_vertical|center_horizontal"-->
+        <!--            android:orientation="horizontal"/>-->
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
-        android:hint="Display Name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:fontFamily="@font/poppinsmedium"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/displayName"
-        android:layout_marginTop="25dp"
-        android:text="Log out"
-        android:textAllCaps="false"
-        android:fontFamily="@font/poppinsmedium"
-        android:textColor="@color/black"/>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
