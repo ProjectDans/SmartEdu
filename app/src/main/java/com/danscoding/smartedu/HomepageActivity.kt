@@ -1,29 +1,20 @@
 package com.danscoding.smartedu
 
-import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Html
-import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
-import com.danscoding.smartedu.LoginActivity.Companion.EXTRA_NAME
 import com.danscoding.smartedu.databinding.ActivityHomepageBinding
 import com.danscoding.smartedu.fragment.BookFragment
 import com.danscoding.smartedu.fragment.HomeFragment
 import com.danscoding.smartedu.fragment.ProfileFragment
 import com.danscoding.smartedu.fragment.SearchFragment
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 
 class HomepageActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomepageBinding
-    private lateinit var adapter: ImageSliderAdapter
-    private val list = ArrayList<ImageData>()
-    private lateinit var dots : ArrayList<TextView>
+//    private lateinit var adapter: ImageSliderAdapter
+//    private val list = ArrayList<ImageData>()
+//    private lateinit var dots : ArrayList<TextView>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

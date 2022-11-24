@@ -42,6 +42,11 @@ class LoginActivity : AppCompatActivity() {
             signIn()
         }
 
+        binding.btnMasuk.setOnClickListener {
+            val intent = Intent(this@LoginActivity, ConfigActivity::class.java)
+            startActivity(intent)
+        }
+
         tvDaftar = findViewById(R.id.tvdaftardisini)
         tvDaftar.setOnClickListener {
             val intent = Intent(this@LoginActivity, RegisterActivity::class.java)

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5887E0"
+    app:layoutDescription="@xml/activity_welcome1_scene"
+    tools:context=".WelcomeActivity1">
+
+    <TextView
+        android:id="@+id/welcome_to_evenity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="97dp"
+        android:text="Welcome To Evenity"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Item Welcome 1-->
+
+    <TextView
+        android:id="@+id/descWelcome1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="51dp"
+        android:text="Description One is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_to_evenity" />
+
+    <ImageView
+        android:id="@+id/imageWelcome1"
+        android:layout_width="337dp"
+        android:layout_height="338dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="47dp"
+        android:src="@drawable/busyoffice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1" />
+    <!--End of Item Welcome1-->
+
+    <!--Item Welcome2-->
+    <TextView
+        android:id="@+id/descWelcome2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Description Two is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <!--End of Item Welcome2-->
+
+    <!--Item Welcome3-->
+    <ImageView
+        android:id="@+id/imageWelcome2"
+        android:layout_width="337dp"
+        android:layout_height="338dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="47dp"
+        android:src="@drawable/welcome_image_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1" />
+
+    <TextView
+        android:id="@+id/descWelcome3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="246dp"
+        android:text="Description Three is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageWelcome3"
+        android:layout_width="337dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/welcome_image_3"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1" />
+    <!--End of Item Welcome3-->
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="80dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descWelcome1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/white" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="80dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintStart_toEndOf="@+id/menu1"
+        app:layout_constraintTop_toBottomOf="@+id/descWelcome1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/white" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="80dp"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:layout_constraintTop_toBottomOf="@+id/descWelcome1"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/white" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_buton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
